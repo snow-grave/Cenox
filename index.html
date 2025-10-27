@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cenox - Agricultura Inteligente</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="header-wrapper">
+            <div class="container nav-container">
+                <a href="#" class="logo"><img src="cenox.png" alt=""></a>
+                <nav>
+                    <ul>
+                        <li><a href="#hero" class="active">Home</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#services">Soluções</a></li>
+                        <li><a href="#cta">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="full-height">
+            <div class="container hero-container">
+                <div class="hero-text fade-in-element">
+                    <p class="subtitle">STARTUP</p>
+                    <img src="cenox.png" alt="CENOX" class="hero-brand-name">
+                    <p class="description">
+                        Unindo tecnologia e campo para uma produção mais inteligente e sustentável.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="#" class="btn btn-outline">LOGIN<span>&#9658;</span></a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="lola.png" alt="Mascote Lola">
+                </div>
+            </div>
+            <div class="quadriculado"><img src="2.png" alt=""></div>
+        </section>
+
+        <section id="about" class="full-height">
+            <div class="background-text">SOBRE</div>
+            <div class="container about-container">
+                <div class="about-image">
+                    <div class="modelo-wrapper">
+                        <model-viewer class="modelo-3d"
+                            src="teste.glb"
+                            camera-controls
+                            disable-zoom
+                            auto-rotate
+                            exposure="1"
+                            shadow-intensity="1"
+                            camera-orbit="0deg 75deg 3m"
+                            style="background-color: transparent;">
+                        </model-viewer>
+                    </div>
+                </div>
+                <div class="about-text fade-in-element">
+                    <p class="subtitle">NOSSO PRODUTO</p>
+                    <h2>Tecnologia que cultiva qualidade.</h2>
+                    <p class="description">
+                        O Cenox nasce da ideia de unir inovação e sustentabilidade para apoiar agricultores no cultivo orgânico com mais qualidade e eficiência.<br>Somos um sistema integrado de hardware e software que monitora as condições do solo e do clima em tempo real.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="services">
+            <div class="container">
+                <div class="section-title fade-in-element">
+                    <p class="subtitle">O QUE FAZEMOS</p>
+                    <h2>Soluções inovadoras para o agricultor</h2>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card large-card fade-in-element">
+                        <div class="card-text">
+                            <h3>Do Solo para os Dados</h3>
+                            <p>Com sensores de pH, temperatura e umidade, o sistema fornece dados precisos para o agricultor tomar decisões mais inteligentes na irrigação, adubação e manejo da plantação</p>
+                        </div>
+                        <div class="card-illustration">
+                            <img src="o-que-plantar-na-horta-750x422.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="service-card fade-in-element">
+                        <div class="card-text">
+                            <h3>Informação na Palma da Mão</h3>
+                            <p>Nosso aplicativo exibe os dados coletados em tempo real, apresentados de forma clara em gráficos e estatísticas para fácil visualização.</p>
+                        </div>
+                    </div>
+                    <div class="service-card fade-in-element">
+                        <div class="card-text">
+                            <h3>Segurança e Eficiência</h3>
+                            <p>Com uma base de dados robusta e autenticação segura, garantimos que suas informações estejam sempre organizadas e acessíveis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cta">
+            <div class="container">
+                <div class="cta-container fade-in-element">
+                    <div class="cta-text">
+                        <p class="subtitle">VAMOS CONVERSAR?</p>
+                        <h2>Pronto para cultivar no claro?</h2>
+                        <p class="description">
+                            Entre em contato com nossa equipe para saber mais sobre o projeto, agendar uma demonstração ou discutir possíveis parcerias.
+                        </p>
+                        <a href="#" class="btn btn-cta">Saiba mais</a>
+                    </div>
+                    <div class="cta-graphic">
+                        <img src="telacenox.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="popup-overlay" id="popup-overlay">
+        <div class="popup-container">
+            <button class="popup-close-btn" id="close-popup-btn">&times;</button>
+
+            <div class="popup-view active" id="login-view">
+                <div class="popup-header">
+                    <h2 class="popup-logo-text">CENOX</h2>
+                    <h2>Bem-vindo de volta!</h2>
+                    <p>Faça login para continuar.</p>
+                </div>
+                <form class="popup-form">
+                    <div class="form-group">
+                        <label for="login-email">Email</label>
+                        <input type="email" id="login-email" placeholder="seuemail@exemplo.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Senha</label>
+                        <input type="password" id="login-password" placeholder="********" required>
+                    </div>
+                    <a href="#" class="forgot-password-link" id="switch-to-forgot">Esqueci a senha</a>
+                    <button type="submit" class="btn btn-popup-login">Entrar</button>
+                </form>
+                <div class="popup-switch">
+                    Não tem uma conta? <a href="#" id="switch-to-signup">Cadastre-se</a>
+                </div>
+            </div>
+
+            <div class="popup-view" id="signup-view">
+                <div class="popup-header">
+                    <h2 class="popup-logo-text">CENOX</h2>
+                    <h2>Crie sua conta</h2>
+                    <p>É rápido e fácil.</p>
+                </div>
+                <form class="popup-form">
+                    <div class="form-group">
+                        <label for="signup-name">Nome completo</label>
+                        <input type="text" id="signup-name" placeholder="Seu nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-tel">Telefone</label>
+                        <input type="tel" id="signup-tel" placeholder="(00) 00000-0000" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-email">Email</label>
+                        <input type="email" id="signup-email" placeholder="seuemail@exemplo.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-password">Crie uma senha</label>
+                        <input type="password" id="signup-password" placeholder="Mínimo 6 caracteres" required>
+                    </div>
+                    <button type="submit" class="btn btn-popup-login">Criar Conta</button>
+                </form>
+                <div class="popup-switch">
+                    Já tem uma conta? <a href="#" id="switch-to-login">Faça login</a>
+                </div>
+            </div>
+
+            <div class="popup-view" id="forgot-password-view">
+                <div class="popup-header">
+                    <h2 class="popup-logo-text">CENOX</h2>
+                    <h2>Recupere sua senha</h2>
+                    <p>Insira seu email para enviarmos um código de recuperação.</p>
+                </div>
+                <form class="popup-form">
+                    <div class="form-group">
+                        <label for="forgot-email">Email</label>
+                        <input type="email" id="forgot-email" placeholder="seuemail@exemplo.com" required>
+                    </div>
+                    <button type="submit" class="btn btn-popup-login">Enviar Código</button>
+                </form>
+                <div class="popup-switch">
+                    Lembrou a senha? <a href="#" id="switch-back-to-login">Faça login</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
